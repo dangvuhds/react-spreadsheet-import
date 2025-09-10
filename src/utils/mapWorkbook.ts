@@ -6,6 +6,7 @@ export const mapWorkbook = (workbook: XLSX.WorkBook, sheetName?: string) => {
     header: 1,
     blankrows: false,
     raw: false,
+    rawNumbers: true,
   })
   return data as string[][]
 }
